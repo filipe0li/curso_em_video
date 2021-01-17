@@ -1,0 +1,36 @@
+Site top para transformar png em favicon
+https://favicon.io/
+
+FAVICON
+Só digitar no programa NA ABA HEAD link.favicon
+IZI
+
+LOREM
+Cria um paragrafo com palavras eleatrórias UTIL
+
+Link para pagina é digita A
+
+../ É voltar para pasta anterior no LINUX, funcuina para links
+
+<pre> mantem texto pré-formatado no HTML (da para inserir TAB)
+
+Caso tenha esquecido de colocar uma tag ex
+<strong></strong> era para estar dentro da tag, mas o burrçao esqueceu.
+
+SELECIONE O QUE VC QUER DENTRO DA TAG E APERTE CTRL + SHIFT + P
+E digite wwa (ENVELOPE  COM ABREVIATURA) E DIGITE A TAG
+IZI
+
+Não é possivel alterar cor em HTML por isso apos a tag usar STYLE
+
+SELECIONA CÓDIGO E APERTE SHIFT + TAB VOLTA ESPAÇAMENTO DO CÓDIGO
+SELECIONA CÓDIGO E APERTE TAB ADICIONA ESPAÇAMENTO NO CÓDIGO
+
+ul lista não ordenada (composta somenti por ponto e circulo)
+ol lista ordenad (composta por número, letra etc)
+
+Segurar ALT faz com que você possa alterar  mais de uma linha por vez
+
+CSS
+
+@charset "UTF-8"; ADICIONA COMPATIBILIDADE COM CARACTERES

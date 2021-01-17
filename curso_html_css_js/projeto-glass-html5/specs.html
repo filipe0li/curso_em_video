@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tudo sobre Google Glass</title>
+  <link rel="stylesheet" href="_css/normalize.css" />
+  <link rel="stylesheet" href="_css/estilo.css" />
+  <link rel="stylesheet" href="_css/specs.css" />
+</head>
+
+<body>
+
+  <main id="interface">
+
+    <header id="cabecalho">
+
+      <h1>Google Glass</h1>
+      <h2>A revolução do Google está chegando</h2>
+
+      <img id="icone" src="_imagens/especificacoes.png" alt="Google Glass" title="Google Glass" />
+
+      <nav id="menu">
+
+        <h1>Menu Principal</h1>
+        <ul onmouseout="mudaFoto('especificacoes.png')">
+          <li onmouseover="mudaFoto('home.png')"><a href="index.html">Home</a></li>
+          <li onmouseover="mudaFoto('especificacoes.png')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaFoto('fotos.png')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaFoto('multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaFoto('contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+        </ul>
+
+      </nav>
+      <!--menu-->
+
+    </header>
+    <!--cabecalho-->
+
+    <section id="corpo-full">
+
+      <article id="noticia-principal">
+
+        <header id="cabecalho-artigo">
+
+          <h3>Glass > Especificações</h3>
+          <h1>Raio-X no Google Glass</h1>
+          <h2>por Gustavo Guanabara</h2>
+          <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+
+        </header>
+        <!--cabecalho-artigo-->
+
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass.
+          Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+        <section id="conteudo">
+
+          <img usemap="#meumapa" src="_imagens/glass-esquema-marcado.jpg" alt="">
+
+          <map name="meumapa">
+            <area shape="rect" coords="265,205,183,256" href="google-glass.html#tela" alt="Tela" target="janela">
+            <!--2 valores para cada canto do retângulo (só precisa de 2 cantos)-->
+            <area shape="circle" coords="157,242,12" href="google-glass.html#camera" alt="Camera" target="janela">
+            <!--2 primeiros valores para centroe 1 para raio-->
+            <area shape="circle" coords="75,50,13" href="google-glass.html#gadgets" alt="Bateria" target="janela">
+            <area shape="poly" coords="81,251,81,213,28,143,28,169" href="google-glass.html#sensores" alt="Sensores"
+              target="janela">
+            <!--2 valores para cada canto do poligono (da para ter varios cantos)-->
+          </map>
+
+          <iframe id="frame-spec" name="janela" scrolling="no" src="google-glass.html" frameborder="0"></iframe>
+          <!--scrolling="no" REMOVEU SCROLL-->
+
+        </section>
+      </article>
+      <!--noticia-principal-->
+
+    </section>
+    <!--corpo-full-->
+
+
+    <footer id="rodape">
+
+      <p>Copyright &COPY; 2013 - by Gustavo Guanabara</p>
+      <p><a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a
+          href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+
+    </footer>
+    <!--rodape-->
+
+  </main>
+  <!--interface-->
+
+  <script src="_javascript/funcoes.js"></script>
+</body>
+
+</html>

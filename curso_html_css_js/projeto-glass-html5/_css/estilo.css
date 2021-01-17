@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "FonteLogo";
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+
+body {
+    background-color:#dddddd;
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#interface {
+    width: 900px;
+    background-color: white;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;  /* adiciona espaçamento no inicio do paragrafo */
+}
+
+a {
+    text-decoration: none;
+    color: #606060;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#icone {
+    position: relative;
+    left: 735px;
+    top: -30px;
+}
+
+#cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background-image: url(../_imagens/glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 80px;
+}
+
+#cabecalho h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    margin-top: 5px;
+}
+    /* Formatação de imagens com legendas */
+
+.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;  /* Adiciona sombra */
+}
+
+.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 1s linear;
+}
+
+.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+    /* Formatação do menu */
+
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+
+    margin: 0px;
+    padding: 0;
+
+    width: 600px;
+    top: 0px;
+    left: calc(50% - 170px);
+}
+
+#menu li {
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s linear;
+}
+
+#menu li:hover {
+    background-color: #606060;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: white;
+    text-decoration: underline; /* Sublinhad feio D+ */
+}
+
+    /* corpo */
+
+#corpo {
+    width: 61%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 20px;
+}
+
+    /* table */
+
+#tablespec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin: 0 auto;
+}
+
+#tablespec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+#tablespec span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+#tablespec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+.ce {
+    color: white;
+    text-align: right;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.cd {
+    background-color: #cecece;
+    text-align: left;
+}
+
+    /* aside */
+
+#lateral {
+width: 28%;
+float: right;
+background-color: #dddddd;
+padding: 20px;
+margin: 10px 0px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#lateral h1 {
+    font-family: "FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin: 0 auto;
+}
+
+#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+    /* noticia-principal */
+
+#noticia-principal h2 {
+    font-size: 13pt;
+    background-color: #dddddd;
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+
+    /* cabecalho-artigo */
+
+#cabecalho-artigo h1{
+    font-family: "FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin: 0px auto;
+}
+
+#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: transparent;
+    margin: 0px;
+}
+
+#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060
+}
+
+.direita {
+    text-align: right;
+}
+
+    /* rodape */
+
+#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+    padding: 15px;
+}
+
+#rodape h1 {
+    font-weight: bold;
+}
+
+#rodape p {
+    text-align: center;
+    margin-bottom: 10px;
+}

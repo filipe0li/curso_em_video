@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p id="msg1">Aqui vai o resultado</p>
+    <p class="msg2">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div name="msg">Clique em mim</div>
+    <script>
+        const corpo = window.document.body;//window.document é opcinal!! FUNCIONA SEM.
+        const p1 = window.document.getElementsByTagName('p')[1];//Número emtre [] é igual primeiro que aparece no documnto
+        window.document.write('Está escrito assim: ' + p1.innerText);
+        //p1.style.color = 'blue';
+        //corpo.style.background = 'black';
+        //document.write(p1.innerHTML);
+        //window.alert(p1.innerText);
+        const d = window.document.getElementById('msg1');//getElement está no singular só pode pegar 1 elemento!
+        d.style.background = 'green';
+        //d.innerText = 'Estou aguardando...';// Jeito simples crie um var/const e depois altere o q quiser.
+        //window.document.getElementById('msg').innerText = 'Olá';//Jeito RAIZ escreve tudo em uma unica linha.
+        const d2 = window.document.getElementsByName('msg')[0];//getElements está no plural tem que indicar qual com [].
+        d2.innerText = 'Olá';
+        window.document.getElementsByClassName('msg2')[0].style.color = 'black';//getElements está no plural tem que indicar qual com [].
+        const d3 = document.querySelector('p#msg1');// CLASS USA . == ('p.msg2') ID USA # == ('p#msg1')
+        d.style.color = 'blue';
+    </script>
+</body>
+</html>

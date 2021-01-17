@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header><!--/header-->
+    <section>
+        <div id="nadaDeMais">
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0"/>
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radSex" id="mas" checked><!--name="radsex" tem que ser igual nos 2 para evitar ficar os 2 marcados-->
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radSex" id="fem">
+                <label for="mas">Feminino</label>                
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div><!--nadaDeMais-->
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div><!--/res-->
+    </section><!--/section-->
+    <footer>
+        <p>&copy;Brobo_ Ltda.</p>
+    </footer><!--/footer-->
+    <script src="script.js"></script>
+</body>
+</html>

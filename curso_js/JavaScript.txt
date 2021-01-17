@@ -1,0 +1,149 @@
+Livros:
+JavaScript O guia definitivo
+
+JavaScript Guia do programador
+
+VAR é a mesma coisa que LAT
+
+var não pode começar com numéros e não pedem usar nome de outras funções pré definidas
+
+True/False são valores BOOLEAN
+
+TIPEOF revela o tipo:
+string/number/boolean/function/object
+
++ em un script serve para concatenação (string + string) e para adição (número + número)
+
+
+converter de streing para number 
+Number.parseFloat (numero com .)
+Number.parseInt (numero inteiro)
+Number(converte a bangu)
+
+de numbver para string 
+n.toString()
+
+Jeito burro
+'O aluno ' + name + 'com ' + idade + ' anos tirou a nota ' + nota
+Jeito PRO
+`O aluno ${name} com ${idade} anos tirou a nota ${nota}`//  !!! presta atenção na ```````````` PORRA
+
+n1 = 15455
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'eur'})
+'€ 1.545,50'
+
+toFixed(n) número da casas apos a visgula q sera exibido
+
+% =não é porcento!! ele intregao que vem depios da virgula dadivisão
+** =ao quadrado
+= =RECEBE VALOR
+CUIDADO
+(5+3)/2=4
+5+3/2=6.5
+ORDEM DE PRECEDÊNCIA DOS VALORES ARITIMÉTICOS (DAS CONTAS):
+() PRIORIDADE 1
+** PRIORIDADE 2
+*/% PRORIDADE 3
++- PRIORIDADE 4
+> < >= <= PRIORIDADE 5
+! %% || PRIORIDADE 6 (P1=! P2=&& P3=||)
+
+n=n+4;//OU PODE USAR m+=4
+n=n-5;//OU PODE USAR n-=5
+n=n*4;//OU PODE USAR n*=4
+n=n/2//OU PODE USAR n/=2
+n=n**2//OU PODE USAR m88=2
+n=n%5//OU PODE USAR n%=5
+
+SIMPLIFICANDO AINDA ++
+
+X=X+1 SIMPLIFICADO X++ (TAMBÉM PODE USAR ++X)
+X=X-1 SIMPLIFICADO X-- (TAMBÉM PODE USAR --X)
+
+var t=5>2//MAIOR Q
+var t=7<4//MENOR Q
+var t=8>=8//MAIOR OU IGUAL À
+var t=9<=7//MENOR OU IGUAL À
+var t=5==5//IGUAL À
+var t=4!=4//DIFERENTE DE
+5==='5'//IDENTICO
+5!=='5'//são de tipos diferentes?(TRUE)(5 number '5' string)
+
+
+Oprdem de  Prcedência(leitura)
+
+ () ** /
+ > < >= <=
+! //NEGAÇÃO
+&& //CONJUNÇÃO
+|| //DISJUNÇÃO
+
+(true&&false)
+(false&&true)
+(true&&true)//&& só aceita se os 2 foremm verdadeiros
+(false&&false)
+
+(true||false)
+(false||true)
+(true||true)
+(false||false)//|| só não aceita se os 2 foremm verdadeiros
+
+BEUTRANO É?TRUE:FALSE
+MEDIA=5.5
+media > 7 ? 'AP' : 'RP'
+RESULT RP
+
+DOM == Document Object Model
+QuerySelector()usa: 
+ID == #
+CLASS == .
+
+Switch (){
+case valor1:
+breack//NÃO ESQUEÇA DE COLOCAR BREACK PARA PARAR 
+case valor2:
+breack
+default
+breack
+}
+
+
+repete enquanto
+
+var c = 1;
+while(c <= 6) {
+    console.log(`Passo ${c}`);
+    c++;//c=c+1
+}
+
+
+Faz depois repete
+
+var c = 1;
+do {
+    console.log(`Passo ${c}`);
+    c++;//c=c+1
+}while(c <= 6)
+
+
+FOR (INICIO; TESTE; INCREMENTO){
+}
+for (var c = 1; c < -10; c++){
+    console.log(`Passo ${c}`);
+}
+
+
+Array é uma variavel que tem varios elemantos, cada elemento é composto por seu valor e por uma chave de identificação.
+var n = [ 0, 1, 2, 3, 4 ];
+num[3] = 6;
+console.log(n);
+[ 0, 1, 6, 3, 4 ];
+n.push(2) // ADICIONA VALOR A ÚLTIMA POSIÇÃO! == [ 0, 1, 6, 3, 4, 2]
+n.length // EXIBE COMPRIMENTO DA ARRAY == 5 
+n.sort() // DEIXA ARRAY EM ORDEM CRESCENTE == [ 0, 1, 2, 3, 4, 6,]
+console.log(n[0]) // EXIBE O PRIMEIRO VALOR DO ARRAY == 0
+n.indexOf() //PROCURA VALORES DENTRO DA ARRAY
+
+for(let pos in valores){ // LEITURA == PARA CADA POSIÇÃO NA ARRAY FAÇA{}
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`);
+};

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldição</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Olá Mundo!</h1>
+  <h2>Me livrando da maldição.</h2>
+  <h1>OBA! Me livrei!</h1>
+
+  <section>
+
+    <h1 class="teste">Acenda a lâmpada</h1>
+    <img id="luz" src="projeto-glass-html5/_imagens/lampada-apagada.jpg" alt="Lâmpada"
+      onmouseover="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')"
+      onclick="mudaLampada('lampada-quebrada')">
+
+  </section>
+
+  <script>
+
+    // alert('Olá Mundo!');
+    // document.write('Olá hoje é dia ' + Date());
+
+    function mudaLampada(tipo) {
+      if (!document.querySelector('#luz').src.includes('quebrada')) { // Se #luz não conter quebrada no src
+        document.querySelector('#luz').src = 'projeto-glass-html5/_imagens/' + tipo + '.jpg';
+      }
+    }
+
+        // let quebrada = false;
+        // function mudaLampada(tipo) {
+        //     if (!quebrada) {
+        //     document.querySelector('#luz').src = 'projeto-glass-html5/_imagens/' + tipo + '.jpg';
+        //         if (tipo == 'lampada-quebrada') {
+        //             quebrada = true;
+        //         }
+        //     }
+        // }
+  </script>
+</body>
+
+</html>
